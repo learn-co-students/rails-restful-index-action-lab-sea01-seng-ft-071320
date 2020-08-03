@@ -1,1 +1,7 @@
-<%= @all.map { |student| student.first_name }.join(" \n") %>
+<ul>
+  <% @all.map do |student| %>
+
+    <li><%= student.first_name %></li>
+
+  <% end %>
+</ul>
